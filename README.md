@@ -1,7 +1,7 @@
 # my-final-project
 Project Overview: Lumina AI - Proactive Relationship Health
 
-Lumina AI is an AI-powered public health tool designed to shift the narrative from crisis intervention to proactive self-awareness and boundary setting in relationships. Rooted in the principle, "#Before you chase love, find yourself first," the system empowers individuals to build a strong sense of self-worth in order to live fulfilling lives, identify and resist manipulation and toxic patterns.
+Lumina is an AI-powered public health tool designed to shift the narrative from crisis intervention to proactive self-awareness and boundary setting in relationships. Rooted in the principle, "#Before you chase love, find yourself first," the system empowers individuals to build a strong sense of self-worth in order to live fulfilling lives, identify and resist manipulation and toxic patterns.
 
 SDG Alignment
 Primary: SDG 3 (Good Health and Well-being) — Addressing Intimate Partner Violence (IPV) as a critical public health crisis.
