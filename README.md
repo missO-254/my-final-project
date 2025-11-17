@@ -1,34 +1,130 @@
-# my-final-project
-Project Overview: Lumina AI - Proactive Relationship Health
+**Lumina - Clarity Over Crisis**
+AI-Powered Awareness Platform for Preventative Emotional Wellness (SDG 3)
 
-Lumina is an AI-powered public health tool designed to shift the narrative from crisis intervention to proactive self-awareness and boundary setting in relationships. Rooted in the principle, "#Before you chase love, find yourself first," the system empowers individuals to build a strong sense of self-worth in order to live fulfilling lives, identify and resist manipulation and toxic patterns.
+Lumina is an AI-powered platform designed to reduce emotional, mental, and relational crises by empowering people with radical clarity, self-awareness, and early detection of harmful patterns.
 
-SDG Alignment
-Primary: SDG 3 (Good Health and Well-being) — Addressing Intimate Partner Violence (IPV) as a critical public health crisis.
+Every year, millions silently suffer emotional manipulation, psychological abuse, and identity erosion—often without realizing it until the damage is overwhelming. Lumina exists to bridge that gap by transforming confusion into clarity.
 
-Secondary: SDG 5 (Gender Equality) — Targeting the systemic roots of female vulnerability to abuse and manipulation.
+**Mission**
 
-The Problem: The Hidden Global Crisis
-Intimate Partner Violence (IPV) is not merely a relationship issue; it is a leading cause of severe harm, resulting in femicide, chronic health issues, and socioeconomic instability for women globally. Lack of early self awareness regarding subtle emotional manipulation is a primary enabler of this tragedy.
+To cultivate deep self-awareness, emotional grounding, and proactive clarity in every individual — ensuring that fewer people fall into harmful relationships, identity crises, or preventable mental breakdowns.
 
-Key Data Validation Points
-60% of all female homicides worldwide are committed by an intimate partner or family member. (source-UN Women / UNODC (2023)
-Women experiencing IPV are twice as likely to experience depression and PTSD, and have higher rates of chronic conditions.(Source -WHO / APA)
-Socioeconomic Domestic violence is a leading cause of homelessness for women and children in many regions. (source - National Coalitions)
+**🧠 What Lumina Solves**
 
-The Solution: Three Pillars of Empowerment
-Lumina AI operates across three interconnected, AI-powered modules to instill self-grounding before an individual finds themselves high-risk situations:
+Most people walk through life disconnected from:
 
-Self-Discovery Quiz: A personalized tool that guides the user to define their core values, personal goals, and non-negotiable boundaries, establishing their unique Grounding Baseline.
+Who they truly are
 
-Red Flag Tracker: Uses Natural Language Processing (NLP) to analyze structured check-ins, identifying the frequency of behaviors like gaslighting, isolation, and control against the user's Grounding Baseline.
+Their core values
 
-Boundary Setting Coach: Provides active, conversational practice (via a simulator) to help users recognize manipulation and removing themselves, directly challenging the learned narrative of prioritizing pleasing others.
+What healthy relationships look like
 
-MVP Showcase: The Unapologetic 'No' Simulator
-The initial Minimum Viable Product (MVP) demonstrates the core skill-building functionality of the Boundary Setting Coach.
+What patterns signal danger
 
-File Location: src/boundary_coach.py
+The difference between love and manipulation
 
-Function: A text-based conversational simulator that role-plays a typical manipulative scenario. The AI analyzes the user's response for keywords that indicate weakness or apology, providing immediate, non-judgmental feedback to strengthen their resolve.
+This lack of awareness leads to:
+✔ emotional burnout
+✔ financial depletion
+✔ distorted self-worth
+✔ cycles of trauma
+✔ unsafe relationships (IPV is a leading cause of femicide worldwide)
 
+Lumina’s goal is simple:
+Give people clarity before crisis.
+
+Core Features (The 3-Pillar System)
+1️⃣ Self-Discovery Profile — “Know Yourself Engine”
+
+AI-powered assessment that helps users identify:
+
+Core values
+
+Emotional needs
+
+Patterns of attachment
+
+Relationship tendencies
+This forms a personal blueprint that guides better decisions.
+
+2️⃣ Patterns Tracker — “AI Early Warning System”
+
+Users upload conversations, voice transcripts, or journal entries.
+Lumina uses NLP to detect:
+
+Manipulation patterns
+
+Emotional pressure
+
+Gaslighting signals
+
+Power imbalance
+It then generates a Relationship Stress Score that warns the user before harm escalates.
+
+3️⃣ Boundary Coach — “The Assertiveness Simulator”
+
+A conversational AI coach that allows users to practice:
+
+Saying “no” with confidence
+
+Emotional regulation
+
+Setting boundaries
+
+Assertive communication
+
+It strengthens emotional muscles that many people never learned growing up.
+
+**SDG Alignment**
+
+Lumina supports:
+
+SDG 3 – Good Health & Well-Being
+
+By addressing emotional wellness, trauma prevention, and mental clarity.
+
+SDG 5 – Gender Equality
+
+By providing early detection against harmful relationships and supporting IPV prevention.
+
+💼 Business Sustainability
+
+Lumina is financially sustainable through:
+
+Premium membership (advanced coaching + stress score history)
+
+In-app AI therapy modules
+
+Partnerships with NGOs, wellness programs & mental health orgs
+
+Anonymous data insights (ethically sourced & optional)
+
+🖥️ Tech Stack
+
+HTML5, CSS3, TailwindCSS
+
+React.js (optional future extension)
+
+NLP (spaCy / Transformers – future model)
+
+OpenAI / Local LLMs (conversation simulation) 
+
+**Future Enhancements**
+
+Mobile version
+
+Trauma-informed voice assistant
+
+Real-time crisis alert system
+
+Safe exit button for IPV situations
+
+Anonymous journaling AI companion
+
+✨ Live Pitch Deck (https://www.canva.com/design/DAG4kAG06dg/kUDYF4ct6sUqV599ihwZlw/view)
+
+Contact Us:
+
+heylumina2025@outlook.com
+
+Awareness is not a luxury — it is mandatory.
