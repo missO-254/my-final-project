@@ -1,4 +1,5 @@
 **Lumina - Clarity Over Crisis**
+
 AI-Powered Awareness Platform for Preventative Emotional Wellness (SDG 3)
 
 Lumina is an AI-powered platform designed to reduce emotional, mental, and relational crises by empowering people with radical clarity, self-awareness, and early detection of harmful patterns.
@@ -24,17 +25,23 @@ What patterns signal danger
 The difference between love and manipulation
 
 This lack of awareness leads to:
+
 ✔ emotional burnout
+
 ✔ financial depletion
+
 ✔ distorted self-worth
+
 ✔ cycles of trauma
+
 ✔ unsafe relationships (IPV is a leading cause of femicide worldwide)
 
 Lumina’s goal is simple:
 Give people clarity before crisis.
 
 Core Features (The 3-Pillar System)
-1️⃣ Self-Discovery Profile — “Know Yourself Engine”
+
+1️⃣ Self-Discovery Profile - “Know Yourself Engine”
 
 AI-powered assessment that helps users identify:
 
