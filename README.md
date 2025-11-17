@@ -134,4 +134,4 @@ Contact Us:
 
 heylumina2025@outlook.com
 
-Awareness is not a luxury — it is mandatory.
+Awareness is not a luxury, it is mandatory.
