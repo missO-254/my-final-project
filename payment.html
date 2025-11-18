@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - Lumina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script> <!-- Paystack SDK -->
+
+    <style>
+        body { background: #faf7fc; font-family: 'Inter', sans-serif; }
+        .deep-purple { color: #581C87; }
+        .pink-btn { background: #db2777; }
+    </style>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedPlan = urlParams.get("plan") || "Starter Package";
+
+        const PACKAGES = {
+            "Starter Package": { price: 800 },
+            "Dessert Package": { price: 2000 },
+            "Buffet Package": { price: 3900 }
+        };
+
+        function payWithPaystack() {
+            let price = PACKAGES[selectedPlan].price * 100; // convert to kobo
+            
+            let handler = PaystackPop.setup({
+                key: "pk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", // YOUR PUBLIC KEY
+                email: document.getElementById("email").value,
+                amount: price,
+                currency: "KES",
+                callback: function(response){
+                    window.location.href = "dashboard.html?plan=" + selectedPlan;
+                },
+                onClose: function(){
+                    alert("Payment cancelled");
+                }
+            });
+            handler.openIframe();
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="max-w-lg mx-auto mt-20 bg-white p-10 rounded-2xl shadow-2xl">
+        <h2 class="text-4xl font-black deep-purple text-center mb-6">Secure Payment</h2>
+
+        <p class="text-center text-gray-600 mb-4 text-lg">
+            Unlock: <span class="deep-purple font-bold" id="plan-name"></span>
+        </p>
+
+        <p class="text-center text-pink-600 text-3xl font-black mb-8" id="plan-price"></p>
+
+        <div class="space-y-4">
+            <label class="block font-semibold">Email</label>
+            <input id="email" type="email" required 
+                   class="w-full px-4 py-3 border rounded-xl"
+                   placeholder="you@example.com">
+        </div>
+
+        <button onclick="payWithPaystack()"
+                class="w-full mt-8 py-3 pink-btn text-white rounded-xl text-lg font-bold hover:bg-pink-600 transition">
+            Pay with Paystack (Mpesa Available)
+        </button>
+    </div>
+
+    <script>
+        document.getElementById("plan-name").innerText = selectedPlan;
+        document.getElementById("plan-price").innerText = "KES " + PACKAGES[selectedPlan].price;
+    </script>
+</body>
+</html>
+
+
+
+

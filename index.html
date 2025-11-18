@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina : Clarity Over Crisis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap');
+        
+        :root {
+            --deep-purple: #581C87;
+            --gold: #FBBF24;
+            --soft-pink: #FFF1F2;
+            --near-white: #FDFCFD;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--near-white);
+            scroll-behavior: smooth;
+        }
+
+        .deep-purple-bg { background-color: var(--deep-purple); }
+        .deep-purple-text { color: var(--deep-purple); }
+        .soft-pink-bg { background-color: var(--soft-pink); }
+        .gold-text { color: var(--gold); }
+        .gold-border { border-color: var(--gold); }
+
+        .hover-gold-glow:hover {
+            box-shadow: 0 0 15px rgba(251, 191, 36, 0.7);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn { animation: fadeIn 1s ease-out; }
+
+        section { scroll-margin-top: 5rem; }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- HEADER -->
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-4 sticky top-0 z-20 bg-white shadow-xl rounded-b-lg">
+        <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-black deep-purple-text tracking-wider">
+                LUMINA
+            </h1>
+
+            <nav class="hidden md:flex space-x-8 text-lg font-semibold">
+                <a href="#story" class="text-gray-600 hover:text-pink-600 transition">Our Story</a>
+                <a href="#solution" class="text-gray-600 hover:text-pink-600 transition">How It Works</a>
+                <a href="#values" class="text-gray-600 hover:text-pink-600 transition">Commitment</a>
+                <a href="#pillars" class="text-gray-600 hover:text-pink-600 transition">Solution</a>
+                <a href="#cta" class="text-gray-600 hover:text-pink-600 transition">Invest</a>
+            </nav>
+
+            <a 
+                href="https://www.canva.com/design/DAG4kAG06dg/kUDYF4ct6sUqV599ihwZlw/view" 
+                target="_blank"
+                class="px-6 py-2 text-sm font-semibold rounded-full deep-purple-bg text-white hover-gold-glow transition shadow-md"
+            >
+                Pitch Deck Access
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO / MISSION -->
+    <section id="mission" class="py-24 sm:py-32 soft-pink-bg border-b-8 gold-border">
+        <div class="max-w-5xl mx-auto text-center px-4">
+            <p class="text-md font-bold tracking-widest uppercase text-pink-600 mb-4 animate-fadeIn">
+                Awaken The Potential Within.
+            </p>
+
+            <h2 class="text-6xl sm:text-8xl font-extrabold mb-8">
+                <span class="gold-text">Clarity</span> Over Crisis.
+            </h2>
+
+            <p class="text-xl sm:text-3xl font-light text-gray-700 max-w-4xl mx-auto">
+                We are nurturing a generation awakened to clarity. The cost of emotional manipulation is preventable, 
+                and we are the first platform to offer radical, data-driven awareness.
+            </p>
+
+            <div class="inline-block mt-10 px-8 py-4 deep-purple-bg rounded-xl shadow-2xl hover-gold-glow transition">
+                <p class="text-xl font-bold text-white">
+                    <span class="gold-text font-black">MISSION:</span> To cultivate radical self-awareness and clarity in every individual.
+                </p>
+            </div>
+
+            <a href="#pillars" class="block mt-8 text-lg font-semibold text-fuchsia-800 hover:text-pink-600 transition">
+                Explore the Three Pillars of Empowerment ↓
+            </a>
+        </div>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section id="story" class="py-24 soft-pink-bg border-b-8 gold-border">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <h2 class="text-5xl font-black deep-purple-text mb-10 text-center">
+                ✨ The Story Behind Lumina: Why We Exist
+            </h2>
+
+            <div class="text-gray-800 text-lg leading-relaxed space-y-6 animate-fadeIn">
+
+                <p>
+                    A profound tragedy unfolds quietly across the world: millions drift through life in a state of 
+                    <span class="font-bold deep-purple-text">half-wakefulness</span>, disconnected from their inner truth,
+                    intuition, and emotional reality.
+                </p>
+
+                <p>
+                    This disconnection is silent but destructive. By the time many finally awaken, the cost is devastating:
+                </p>
+
+                <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                    <li>A collapsed sense of self</li>
+                    <li>Mental exhaustion and overwhelm</li>
+                    <li>A dimmed spirit and financial strain</li>
+                    <li>A life derailed by preventable trauma</li>
+                </ul>
+
+                <p>
+                    And the greatest sorrow? Many never awaken at all. To walk this earth and never fully live—
+                    <span class="italic font-semibold">to survive instead of thrive</span>—is the deepest human tragedy.
+                </p>
+            </div>
+
+            <div class="mt-16 p-10 deep-purple-bg bg-opacity-90 rounded-2xl shadow-xl text-white">
+                <h3 class="text-3xl font-extrabold gold-text mb-4">Our Core Truth</h3>
+
+                <p class="text-lg leading-relaxed mb-6">
+                    Lumina was born from a simple truth: 
+                    <span class="font-bold gold-text">Lack of self-awareness is the silent force behind most emotional crises.</span>
+                </p>
+
+                <p class="text-lg leading-relaxed mb-6">
+                    Confusion about identity leads many into relationships and environments that diminish potential instead of expanding it.
+                </p>
+
+                <p class="text-lg leading-relaxed">
+                    We believe every human deserves an emotionally safe, fulfilling life. Empowering a generation with awareness 
+                    creates lives rooted in purpose—not survival.
+                </p>
+            </div>
+
+            <!-- DID YOU KNOW -->
+<div class="mt-20 p-8 rounded-xl border-2 border-pink-300 bg-white shadow-lg text-center">
+    <h3 class="text-4xl font-black deep-purple-text mb-6">
+        Did You Know? 🌎
+    </h3>
+
+    <!-- Original Global IPV Statistic -->
+    <p class="text-xl text-gray-700 font-semibold max-w-3xl mx-auto mb-8">
+        IPV (Intimate Partner Violence) is a leading cause of femicide globally.  
+        <span class="deep-purple-text font-extrabold">60% of female homicides</span> 
+        are committed by intimate partners or family members 
+        <span class="text-pink-600">(UN Women, 2023)</span>.
+    </p>
+
+    <!-- South Africa Femicide Crisis -->
+    <p class="text-lg text-gray-700 font-semibold max-w-3xl mx-auto mb-6">
+        South Africa is experiencing one of the world’s highest femicide rates.  
+        Over <span class="deep-purple-text font-extrabold">5,500 women</span> lost their lives in the year ending March 2024,  
+        and firearm-related femicides have risen to an average of  
+        <span class="deep-purple-text font-extrabold">15 women every single day</span>.  
+        <span class="text-pink-600">(Source: Heinrich Böll Foundation, 2025)</span>
+    </p>
+
+    <!-- Autoimmune Disease Data -->
+    <p class="text-lg text-gray-700 font-semibold max-w-3xl mx-auto">
+        Women also carry the highest burden of autoimmune disease:  
+        <span class="deep-purple-text font-extrabold">78% of autoimmune diagnoses</span> occur in women,  
+        with chronic emotional stress identified as a major contributing factor.  
+        <span class="text-pink-600">(CDC, Clinical Immunology Report)</span>
+    </p>
+</div>
+
+        </div>
+    </section>
+
+    <!-- HOW LUMINA SOLVES THE PROBLEM -->
+    <section id="solution" class="py-24 bg-white border-b-8 gold-border">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <h2 class="text-5xl font-black deep-purple-text mb-12 text-center">
+                ⭐ How Lumina Solves the Problem
+            </h2>
+
+            <p class="text-lg text-gray-700 leading-relaxed text-center max-w-3xl mx-auto mb-16">
+                Lumina transforms emotional confusion into clarity through three AI-powered systems that guide users 
+                from self-understanding → early detection → confident action.
+            </p>
+
+            <!-- Feature 1 -->
+            <div class="mb-12 p-8 rounded-xl shadow-xl bg-pink-50 border-l-8 gold-border">
+                <h3 class="text-3xl font-extrabold deep-purple-text mb-2">1. The Self-Discovery Profile</h3>
+                <p class="text-pink-600 font-semibold italic mb-3">AI Clarity Engine</p>
+                <p class="text-gray-700">
+                    Helps users understand their identity, core values, emotional needs, and relationship patterns. 
+                    This forms an internal compass that reduces confusion and improves decision-making.
+                </p>
+            </div>
+        
+            <!-- Feature 2 -->
+            <div class="mb-12 p-8 rounded-xl shadow-xl bg-pink-50 border-l-8 gold-border">
+                <h3 class="text-3xl font-extrabold deep-purple-text mb-2">2. Patterns Tracker</h3>
+                <p class="text-pink-600 font-semibold italic mb-3">AI Early Warning System</p>
+                <p class="text-gray-700">
+                    Users upload conversations, texts, or journal entries. NLP detects manipulation patterns and generates a 
+                    "Relationship Stress Score" — giving early signals before harm escalates.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="p-8 rounded-xl shadow-xl bg-pink-50 border-l-8 gold-border">
+                <h3 class="text-3xl font-extrabold deep-purple-text mb-2">3. Boundary Coach</h3>
+                <p class="text-pink-600 font-semibold italic mb-3">AI Assertiveness Simulator</p>
+                <p class="text-gray-700">
+                    A safe AI-powered environment where users practice emotional balance, communication, and the 
+                    “Unapologetic No” until it becomes instinctive.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMMITMENT SECTION -->
+    <section id="values" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <h3 class="text-4xl font-extrabold deep-purple-text mb-12 text-center border-b-4 border-pink-200 pb-2 max-w-xl mx-auto">
+                Our Commitment to You
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                <div class="p-8 rounded-2xl shadow-xl bg-pink-50 border-2 border-pink-100 hover:translate-y-[-5px] transition">
+                    <span class="text-5xl block mb-4">🌟</span>
+                    <h4 class="text-2xl font-black text-pink-600 mb-3">Radical Validation</h4>
+                    <p class="gold-text font-medium">You are safe, seen, and heard. Always.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl shadow-xl bg-pink-50 border-2 border-pink-100 hover:translate-y-[-5px] transition">
+                    <span class="text-5xl block mb-4">🛡️</span>
+                    <h4 class="text-2xl font-black text-pink-600 mb-3">Emotional Balance</h4>
+                    <p class="gold-text font-medium">Practice assertiveness until boundary-setting becomes instinct.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl shadow-xl bg-pink-50 border-2 border-pink-100 hover:translate-y-[-5px] transition">
+                    <span class="text-5xl block mb-4">💡</span>
+                    <h4 class="text-2xl font-black text-pink-600 mb-3">Proactive Clarity</h4>
+                    <p class="gold-text font-medium">Identify red flags before emotional or financial crisis begins.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PILLARS / SOLUTION -->
+    <section id="pillars" class="py-24 deep-purple-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+
+            <h3 class="text-4xl font-black gold-text mb-4">
+                The Core Solution: A Path Back To Yourself.
+            </h3>
+
+            <p class="text-xl font-light mb-12 max-w-3xl mx-auto">
+                Our AI platform delivers three interconnected, high-impact features designed for preventative emotional clarity.
+            </p>
+
+            <div class="space-y-8 text-left">
+
+                <div class="p-6 soft-pink-bg rounded-lg shadow-2xl border-l-8 gold-border transform hover:shadow-gold-xl transition duration-500">
+    <span class="text-sm font-black text-fuchsia-800">PILLAR 1</span>
+    <h4 class="text-2xl font-extrabold text-gray-900 mt-1 mb-2">Self Discovery</h4>
+    <p class="text-pink-600 font-bold mb-3 italic">Self-Worth Benchmark</p>
+
+    <p class="gold-text mb-6">
+        Establishes the user's objective non-negotiables, core values, and communication style, creating a baseline for relationship health assessment.
+    </p>
+
+    <!-- QUIZ BUTTON (place here!) -->
+    <a 
+        href="quiz.html"
+        class="px-6 py-3 inline-block bg-pink-600 text-white font-bold text-lg rounded-full shadow-lg hover:bg-pink-700 transition"
+    >
+        Take the Free Self-Discovery Quiz
+    </a>
+</div>
+
+
+                <div class="p-6 soft-pink-bg rounded-lg shadow-2xl border-l-8 gold-border">
+                    <span class="text-sm font-black text-fuchsia-800">PILLAR 2</span>
+                    <h4 class="text-2xl font-extrabold text-gray-900">Patterns Tracker</h4>
+                    <p class="text-pink-600 font-bold italic mb-3">AI Early Warning System</p>
+                    <p class="gold-text">Detects manipulation patterns using NLP and generates a stress score.</p>
+                </div>
+
+                <div class="p-6 soft-pink-bg rounded-lg shadow-2xl border-l-8 gold-border">
+                    <span class="text-sm font-black text-fuchsia-800">PILLAR 3</span>
+                    <h4 class="text-2xl font-extrabold text-gray-900">Boundary Coach</h4>
+                    <p class="text-pink-600 font-bold italic mb-3">Assertiveness Simulator</p>
+                    <p class="gold-text">Helps users practice emotional balance and difficult conversations.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+
+            <h3 class="text-5xl font-extrabold gold-text mb-4">
+                Invest in Empowerment.
+            </h3>
+
+            <p class="text-xl font-medium mb-12 text-gray-300 max-w-3xl mx-auto">
+                Lumina is an AI-powered platform redefining preventative emotional wellness — creating social impact at scale.
+            </p>
+
+            <a 
+                href="#"
+                class="inline-block px-12 py-5 deep-purple-bg text-white font-black text-xl rounded-full shadow-2xl border-4 gold-border hover:scale-[1.03] transition"
+            >
+                Request Full Financial Model
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SIGNATURE -->
+    <div class="py-10 bg-white text-center">
+        <p class="text-xl sm:text-2xl font-bold deep-purple-text tracking-wide">
+            Awareness is not a luxury — it is <span class="gold-text">mandatory.</span>
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 py-10">
+        <div class="max-w-4xl mx-auto text-center text-gray-400">
+
+            <p class="mb-4 text-white font-semibold text-lg">
+                Lumina: The Architect of Awareness
+            </p>
+
+            <a href="mailto:hello@lumina.com" class="text-amber-300 hover:text-amber-200 text-xl font-bold">
+                Contact us on : heylumina2025@outlook.com
+            </a>
+
+            <p class="mt-4 text-sm">&copy; 2025. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
+

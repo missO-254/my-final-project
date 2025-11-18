@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Premium Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap');
+
+        :root {
+            --deep-purple: #581C87;
+            --gold: #FBBF24;
+            --soft-pink: #FFF1F2;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfcfd;
+        }
+
+        .deep-purple-bg { background-color: var(--deep-purple); }
+        .deep-purple-text { color: var(--deep-purple); }
+        .gold-text { color: var(--gold); }
+        .gold-border { border-color: var(--gold); }
+        .soft-pink-bg { background-color: var(--soft-pink); }
+
+        .hover-gold-glow:hover {
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
+        }
+        
+        /* Custom badge styling for 'Most Popular' */
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            /* FIX: Ensure visibility with z-index and use direct hex codes */
+            z-index: 10; 
+            background-color: #FBBF24; /* Gold */
+            color: #581C87; /* Deep Purple */
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transform: rotate(5deg);
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- HEADER -->
+    <header class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+        <h1 class="text-3xl font-black deep-purple-text">LUMINA</h1>
+
+        <a href="index.html" class="text-sm font-semibold text-gray-600 hover:text-pink-600">
+            ← Back to Home
+        </a>
+    </header>
+
+    <!-- LOCKED SECTION -->
+    <section class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-5xl font-extrabold deep-purple-text mb-6">
+            Unlock the Next Level of Awareness
+        </h2>
+
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-10">
+            You’ve completed your <span class="deep-purple-text font-bold">Self-Discovery Quiz</span>. 
+            Now step into a deeper realm of clarity with Lumina’s premium AI tools — built to help you 
+            recognize early emotional risks and guide you into your most grounded, empowered self.
+        </p>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- CARD 1 -->
+            <div class="p-6 rounded-xl soft-pink-bg border border-pink-300 shadow-lg">
+                <h3 class="text-xl font-bold deep-purple-text mb-4">Stress Score Graph</h3>
+                <div class="h-32 bg-gray-300 rounded-lg blur-sm flex items-center justify-center">
+                    <span class="text-gray-500 text-sm">Premium Content</span>
+                </div>
+                <p class="text-gray-600 text-sm mt-3">
+                    Detect early emotional pressure and risk escalation.
+                </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="p-6 rounded-xl soft-pink-bg border border-pink-300 shadow-lg">
+                <h3 class="text-xl font-bold deep-purple-text mb-4">Emotional Pattern Map</h3>
+                <div class="h-32 bg-gray-300 rounded-lg blur-sm flex items-center justify-center">
+                    <span class="text-gray-500 text-sm">Premium Content</span>
+                </div>
+                <p class="text-gray-600 text-sm mt-3">
+                    Visualize behavioral cycles, red-flag patterns & relationship dynamics.
+                </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="p-6 rounded-xl soft-pink-bg border border-pink-300 shadow-lg">
+                <h3 class="text-xl font-bold deep-purple-text mb-4">AI Risk Assessment</h3>
+                <div class="h-32 bg-gray-300 rounded-lg blur-sm flex items-center justify-center">
+                    <span class="text-gray-500 text-sm">Premium Content</span>
+                </div>
+                <p class="text-gray-600 text-sm mt-3">
+                    Your personalized early-warning system for emotional manipulation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+
+            <!-- MAIN VALUE PROPOSITION HOOK -->
+            <h3 class="text-4xl font-black deep-purple-text mb-2">
+                🍽️ Your Wellness Menu: Self-Awareness Served Daily
+            </h3>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-10">
+                Unlock clarity on your terms. Daily self-awareness is now on the menu. Choose how deeply you want to nourish your inner self with emotional insights.
+            </p>
+            <!-- END MAIN HOOK -->
+
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                <!-- PLAN 1: The Starter Package (Bullets Restored) -->
+                <div class="p-8 bg-white border-2 border-pink-200 rounded-2xl shadow-lg">
+                    <h4 class="text-2xl font-bold deep-purple-text mb-2">The Starter Package</h4>
+                    <p class="text-gray-600 mb-6 font-semibold">The First Taste: Essential Clarity. Dip your toes into self-awareness.</p>
+                    <p class="text-4xl font-extrabold deep-purple-text mb-6">KES 800</p>
+                    
+                    <ul class="text-gray-700 space-y-2 mb-8 text-sm text-left mx-auto max-w-xs">
+                        <li>✓ **A Sample of Insight Scans:** Get a guided first look at your core emotional patterns (Limited access).</li>
+                        <li>✓ **Essential Boundary Tip Sheet.</li>
+                        <li>✓ **10-Day Lumina Guarantee:** Try the flavor of self-discovery risk-free!</li>
+                    </ul>
+
+                    <a href="signup.html" class="block px-6 py-3 deep-purple-bg text-white font-bold rounded-full hover-gold-glow">
+    Unlock Starter
+</a>
+
+                    </a>
+                </div>
+
+                <!-- PLAN 2 (POPULAR): The Dessert Package (Full Bullets Kept) -->
+                <div class="p-8 bg-white border-4 gold-border rounded-2xl shadow-2xl transform scale-105 relative">
+                    <!-- MOST POPULAR BADGE -->
+                    <div class="popular-badge">Most Popular</div>
+                    
+                    <h4 class="text-2xl font-bold gold-text mb-2">The Dessert Package</h4>
+                    <p class="text-gray-600 mb-6 font-semibold">Are you ready to satisfy your craving? This is our **Signature Offer** and your most requested **Daily Treat**.</p>
+                    <p class="text-4xl font-extrabold deep-purple-text mb-6">KES 2,000</p>
+
+                    <ul class="text-gray-700 space-y-2 mb-8 text-sm text-left mx-auto max-w-xs">
+                        <li>✓ **Includes The Starter Essentials.</li>
+                        <li>✓ **Limited Emotional Check-Ups:** Get a glimpse of your core emotional patterns.</li>
+                        <li>✓ **Dedicated Boundary Chef Access:** Get advanced scripts for complex relationships.</li>
+                        <li>✗ **Personalized Mastery Roadmap.</li>
+                    </ul>
+
+                    <a href="signup.html" class="block px-6 py-3 deep-purple-bg text-white font-bold rounded-full hover-gold-glow">
+    Start Your Daily Treat
+</a>
+
+                </div>
+
+                <!-- PLAN 3: The Buffet Package (Bullets Restored) -->
+                <div class="p-8 bg-white border-2 border-pink-200 rounded-2xl shadow-lg">
+                    <h4 class="text-2xl font-bold deep-purple-text mb-2">The Buffet Package</h4>
+                    <p class="text-gray-600 mb-6 font-semibold">Why settle for breadcrumbs when you can feast at the Grand Buffet?</p>
+                    <p class="text-4xl font-extrabold deep-purple-text mb-6">KES 3,900</p>
+
+                    <ul class="text-gray-700 space-y-2 mb-8 text-sm text-left mx-auto max-w-xs">
+                        <li>✓ **Full Access to the Entire Wellness Menu.</li>
+                        <li>✓ **Weekly Chef's Summary Report (AI Insights):** Personalized, in-depth analysis of your progress.</li>
+                        <li>✓ **Personalized Mastery Roadmap.</li>
+                        <li>✓ **VIP Priority Support:** Skip the queue with our fastest response time for any coaching needs.</li>
+                    </ul>
+
+                    <a href="signup.html" class="block px-6 py-3 deep-purple-bg text-white font-bold rounded-full hover-gold-glow">
+    Unlock Healing Journey
+</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 py-10 text-center text-gray-300">
+        <p class="text-lg font-semibold text-white mb-2">Lumina: The Architect of Awareness</p>
+        <p class="text-sm">&copy; 2025. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

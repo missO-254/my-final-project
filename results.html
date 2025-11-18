@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Results - Lumina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap');
+
+        :root {
+            --deep-purple: #581C87;
+            --gold: #FBBF24;
+            --soft-pink: #FFF1F2;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #faf8fb;
+        }
+
+        .deep-purple-text { color: var(--deep-purple); }
+        .soft-pink-bg { background-color: var(--soft-pink); }
+        .blur-lock {
+            filter: blur(7px);
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- HEADER -->
+    <header class="max-w-6xl mx-auto py-6 px-6 flex justify-between items-center">
+        <h1 class="text-3xl font-black deep-purple-text">LUMINA</h1>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <section class="max-w-3xl mx-auto mt-16 text-center">
+        
+        <h2 class="text-5xl font-extrabold deep-purple-text mb-4">
+            Your Self-Discovery Report is Ready ✨
+        </h2>
+
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-12">
+            We analyzed your answers to uncover your emotional patterns, inner strengths,  
+            and the hidden beliefs shaping your relationships.  
+            Access your full report to reveal your *clarity blueprint*.
+        </p>
+
+        <!-- BLURRED REPORT PREVIEW -->
+        <div class="soft-pink-bg p-8 rounded-2xl shadow-xl border border-pink-200 blur-lock">
+            <h3 class="text-3xl font-bold deep-purple-text mb-4">Your Core Identity Profile</h3>
+            <p class="text-gray-600">
+                You are someone who values depth, authenticity, meaning, and emotional truth...
+            </p>
+
+            <h3 class="text-3xl font-bold deep-purple-text mt-10 mb-4">Emotional Strengths</h3>
+            <ul class="text-gray-600 space-y-2">
+                <li>• Deep empathy</li>
+                <li>• Powerful intuition</li>
+                <li>• High emotional awareness</li>
+            </ul>
+
+            <h3 class="text-3xl font-bold deep-purple-text mt-10 mb-4">Hidden Inner Blocks</h3>
+            <p class="text-gray-600">
+                You may struggle with overgiving, carrying emotional weight, or staying in draining connections...
+            </p>
+        </div>
+
+        <!-- LOCK MESSAGE -->
+        <div class="mt-10 p-6 border-l-4 border-pink-500 bg-white shadow-md">
+            <p class="text-xl font-semibold deep-purple-text">
+                🔒 Your full Self-Discovery Report is locked.
+            </p>
+            <p class="text-gray-600 text-sm mt-2">
+                Log in or unlock the Awakening Package to view your personalized results.
+            </p>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="mt-10 flex justify-center space-x-6">
+
+            <!-- LOGIN BUTTON -->
+            <a href="login.html"
+                class="px-6 py-3 bg-gray-900 text-white font-bold rounded-full hover:bg-gray-700 transition">
+                Login to View Results
+            </a>
+
+            <!-- PAYWALL BUTTON -->
+            <a href="premium.html"
+                class="px-6 py-3 bg-pink-600 text-white font-bold rounded-full hover:bg-pink-700 transition">
+                Unlock Starter Package (KES 800)
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-20 py-8 bg-gray-950 text-center text-gray-300">
+        <p class="text-white text-sm">&copy; 2025 Lumina. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

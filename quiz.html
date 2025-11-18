@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Self-Discovery Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8FC;
+        }
+        .deep-purple { color: #581C87; }
+        .deep-purple-bg { background-color: #581C87; }
+        .gold-text { color: #FBBF24; }
+        .soft-card { background-color: #FFF1F2; }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center py-16 px-4">
+
+    <div class="max-w-3xl w-full soft-card p-10 rounded-3xl shadow-xl">
+        
+        <!-- Title -->
+        <h1 class="text-4xl font-black deep-purple text-center mb-6">
+            Lumina Self-Discovery Quiz ✨
+        </h1>
+        <p class="text-center text-gray-700 mb-10">
+            Answer the questions below to generate your personalized <span class="font-bold deep-purple">Clarity Profile</span>.
+        </p>
+
+        <!-- FORM -->
+        <form id="quizForm" class="space-y-8">
+
+            <!-- Question Template -->
+            <div>
+                <label class="block font-semibold text-lg text-gray-800 mb-2">
+                    1. Who are you and why are you here?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q1" required></textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-lg mb-2">
+                    2. What core values guide your life and decisions?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q2" required></textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-lg mb-2">
+                    3. What kind of life do you want to live?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q3" required></textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-lg mb-2">
+                    4. What brings you the deepest joy and lights up your soul?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q4" required></textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-lg mb-2">
+                    5. What impact do you want to leave in this world?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q5" required></textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-lg mb-2">
+                    6. What are your biggest fears, and how do they hold you back?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q6" required></textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-lg mb-2">
+                    7. What boundary do you need to set more strongly right now?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q7" required></textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-lg mb-2">
+                    8. When was the last time you felt truly present and authentic?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q8" required></textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-lg mb-2">
+                    9. If you had unlimited resources, what would you create or pursue first?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q9" required></textarea>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-lg mb-2">
+                    10. What limiting belief do you want to release from your life?
+                </label>
+                <textarea class="w-full p-4 rounded-xl border border-gray-300" name="q10" required></textarea>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <button 
+    onclick="submitQuiz()"
+    class="bg-purple-700 text-white px-6 py-3 mt-6 rounded-lg"
+>
+    See My Results
+</button>
+
+        </form>
+
+        <!-- RESULT SECTION -->
+        <div id="result" class="hidden mt-12 p-8 rounded-2xl bg-white border-2 border-pink-200">
+            <h2 class="text-3xl font-black deep-purple mb-4">Your Clarity Profile 🌱</h2>
+            <p id="resultText" class="text-gray-800 leading-relaxed"></p>
+        </div>
+
+    </div>
+
+<script>
+document.getElementById('quizForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const data = new FormData(this);
+
+    const summary = `
+        <p class="mb-4">You are someone who understands that your purpose is deeply tied to <strong>${data.get('q1')}</strong>.</p>
+        <p class="mb-4">Your life is guided by values such as <strong>${data.get('q2')}</strong>, which shape every decision you make.</p>
+        <p class="mb-4">You envision a life where you <strong>${data.get('q3')}</strong>.</p>
+        <p class="mb-4">Joy for you comes from <strong>${data.get('q4')}</strong>, revealing what makes your soul truly alive.</p>
+        <p class="mb-4">You hope to leave an impact rooted in <strong>${data.get('q5')}</strong>.</p>
+        <p class="mb-4">However, fears like <strong>${data.get('q6')}</strong> may be holding you back from your potential.</p>
+        <p class="mb-4">You know it’s time to set a stronger boundary around <strong>${data.get('q7')}</strong>.</p>
+        <p class="mb-4">Your most authentic self appears when you are <strong>${data.get('q8')}</strong>.</p>
+        <p class="mb-4">If nothing was stopping you, you’d pursue <strong>${data.get('q9')}</strong> — a clear sign of your deepest desires.</p>
+        <p class="">And finally, you're ready to release the limiting belief: <strong>${data.get('q10')}</strong>.</p>
+    `;
+
+    document.getElementById('resultText').innerHTML = summary;
+    document.getElementById('result').classList.remove('hidden');
+});
+</script>
+
+</body>
+</html>
+
